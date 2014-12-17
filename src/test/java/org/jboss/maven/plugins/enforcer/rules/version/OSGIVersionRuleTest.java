@@ -42,6 +42,7 @@ public class OSGIVersionRuleTest extends PlexusTestCase
    private MavenProject createMavenProject(String version) throws Exception
    {
       MavenProject project = new MockProject();
+      project.setName("Demo");
       project.setVersion(version);
       return project;
    }
@@ -99,7 +100,7 @@ public class OSGIVersionRuleTest extends PlexusTestCase
       }
       catch (EnforcerRuleException e) 
       {
-         ;
+         assertEquals("Version of module Demo: [1.0-beta] is not a valid OSGI version.", e.getLocalizedMessage());
       }
       
       project = createMavenProject("1.0.beta");
@@ -111,7 +112,7 @@ public class OSGIVersionRuleTest extends PlexusTestCase
       }
       catch (EnforcerRuleException e) 
       {
-         ;
+         assertEquals("Version of module Demo: [1.0.beta] is not a valid OSGI version.", e.getLocalizedMessage());
       }
       
       project = createMavenProject("1.beta");
@@ -123,7 +124,7 @@ public class OSGIVersionRuleTest extends PlexusTestCase
       }
       catch (EnforcerRuleException e) 
       {
-         ;
+         assertEquals("Version of module Demo: [1.beta] is not a valid OSGI version.", e.getLocalizedMessage());
       }
 
       project = createMavenProject("1-beta");
@@ -135,7 +136,7 @@ public class OSGIVersionRuleTest extends PlexusTestCase
       }
       catch (EnforcerRuleException e) 
       {
-         ;
+         assertEquals("Version of module Demo: [1-beta] is not a valid OSGI version.", e.getLocalizedMessage());
       }
 
       project = createMavenProject("1.0.0-beta");
@@ -147,7 +148,7 @@ public class OSGIVersionRuleTest extends PlexusTestCase
       }
       catch (EnforcerRuleException e) 
       {
-         ;
+         assertEquals("Version of module Demo: [1.0.0-beta] is not a valid OSGI version.", e.getLocalizedMessage());
       }
    }
 

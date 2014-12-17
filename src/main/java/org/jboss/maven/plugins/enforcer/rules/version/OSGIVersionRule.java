@@ -65,7 +65,7 @@ public class OSGIVersionRule implements EnforcerRule
       }
       else if (!isOSGIVersion(version, helper.getLog()))
       {
-         throw new EnforcerRuleException(version + " is not a valid OSGI version.");
+         throw new EnforcerRuleException("Version of module " + project.getName() + ": [" + version + "] is not a valid OSGI version.");
       }
    }
 
