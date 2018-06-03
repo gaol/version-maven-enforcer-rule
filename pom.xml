@@ -30,7 +30,7 @@
    <groupId>org.jboss.maven.plugins.enforcer.rules</groupId>
    <artifactId>version-enforcer-rule</artifactId>
    <packaging>jar</packaging>
-   <version>1.0.0</version>
+   <version>1.0.1-SNAPSHOT</version>
    <name>Version Rules for Maven Enforcer Plugin</name>
    <description>
       Rules to restrict project versions, dependencies versions, plugins versions.
@@ -39,7 +39,7 @@
       <connection>scm:git:git://github.com/gaol/version-maven-enforcer-rule.git</connection>
       <developerConnection>scm:git:ssh://git@github.com/gaol/version-maven-enforcer-rule.git</developerConnection>
       <url>http://www.jboss.org/</url>
-      <tag>1.0.0</tag>
+      <tag>HEAD</tag>
    </scm>
 
    <!-- Licenses -->
