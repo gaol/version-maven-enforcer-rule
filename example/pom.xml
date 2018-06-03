@@ -19,11 +19,11 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-   <groupId>org.jboss.samples</groupId>
-   <artifactId>sample</artifactId>
+   <groupId>org.jboss.maven.plugins.enforcer.rules.examples</groupId>
+   <artifactId>example</artifactId>
    <packaging>pom</packaging>
-   <version>0.0.1-SNAPSHOT</version>
-   <name>Sample 1</name>
+   <version>1.0.0-SNAPSHOT</version>
+   <name>Example</name>
 
    <modules>
      <module>child</module>
