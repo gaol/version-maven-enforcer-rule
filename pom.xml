@@ -65,7 +65,7 @@
 
   <properties>
     <version.enforcer.api>1.4.1</version.enforcer.api>
-    <version.maven>2.2.1</version.maven>
+    <version.maven>3.8.1</version.maven>
     <version.osgi>4.2.0</version.osgi>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
